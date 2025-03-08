@@ -6,7 +6,7 @@ $hero_text = $args['hero_text'];
 
 ?>
 
-<section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center items-center">
+<section class="relative test w-full !h-[600px] md:!h-[700px] flex flex-col justify-center items-center">
     <?php if ($hero_text) : ?>
         <h1 class="text-[40px] lg:text-[80px] leading-[45px] lg:leading-[80px] font-medium"><?php echo $hero_text; ?></h1>
     <?php endif; ?>
