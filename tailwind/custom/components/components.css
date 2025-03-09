@@ -84,6 +84,10 @@ header.header-collapsed {
 	@apply !text-[20px] font-medium uppercase text-white hover:text-primary;
 }
 
+#site-navigation ul li:last-child {
+	@apply block lg:hidden bg-primary p-[10px_30px] rounded-[5px] [&_a]:hover:text-white hover:bg-[#07969d] cursor-pointer transition duration-200;
+}
+
 .line-decorated {
 	@apply relative;
 	@apply inline-block;
@@ -167,7 +171,7 @@ body .ham .line {
 }
 
 .guides {
-	@apply hidden lg:block uppercase text-[20px] font-medium absolute left-auto right-auto top-1/2 -translate-y-1/2 bottom-0 ml-[5px] w-auto h-fit z-20 bg-secondary;
+	@apply hidden lg:block uppercase text-[20px] font-medium absolute left-[50px] right-auto top-1/2 -translate-y-1/2 bottom-0 w-[2px] h-full z-20 bg-secondary;
 	text-orientation: upright;
 	writing-mode: vertical-lr;
 }
@@ -225,7 +229,7 @@ body .ham .line {
 }
 .swiper-pagination-bullet {
 	border-radius: 0;
-	background: white;
+	background: #d5d5d5;
 	opacity: 1;
 	width: 25px;
 	height: 5px;
@@ -249,4 +253,9 @@ footer {
 }
 #menu-footer li {
 	@apply w-fit text-[25px] leading-[100%] hover:text-primary transition duration-200;
+}
+
+.bg_custom_gradient {
+	background: linear-gradient(0deg, #110d25 10%, rgba(17, 13, 37, 0.6) 400%);
+	@apply size-full absolute top-0 left-0;
 }

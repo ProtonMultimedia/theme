@@ -9,9 +9,6 @@ $bg_image = $args['bg_image'];
 $btn = $args['btn'];
 ?>
 
-
-
-
 <section class="relative py-[80px] lg:py-[100px] bg-[url('<?= $bg_image['url'] ?>')] bg-center">
     <img
         class="block absolute bottom-0 left-0 z-0 opacity-50 lg:opacity-100"
@@ -19,7 +16,7 @@ $btn = $args['btn'];
         alt="Decorations"
         role="presentation" />
     <div class="container mx-auto">
-        <div class="guides left-minus-px right-auto bg-dark-purple"></div>
+        <div class="hidden guides left-minus-px right-auto bg-dark-purple"></div>
 
         <div class="relative">
             <div class="container flex flex-row flex-wrap lg-wide:flex-no-wrap justify-center items-center lg:gap-[120px]">
@@ -40,6 +37,6 @@ $btn = $args['btn'];
             </div>
         </div>
 
-        <div class="guides right-minus-px left-auto bg-dark-purple"></div>
+        <div class="hidden guides right-minus-px left-auto bg-dark-purple"></div>
     </div>
 </section>
