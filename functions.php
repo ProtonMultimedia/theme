@@ -201,3 +201,20 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+function realizations_custom_post_type()
+{
+	register_post_type(
+		'realizations',
+		array(
+			'labels'      => array(
+				'name'          => __('Realizacje', 'textdomain'),
+				'singular_name' => __('realizacja', 'textdomain'),
+			),
+			'public'      => true,
+			'has_archive' => true,
+			'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+		)
+	);
+}
+add_action('init', 'realizations_custom_post_type');
