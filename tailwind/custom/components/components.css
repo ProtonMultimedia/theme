@@ -276,3 +276,41 @@ footer {
 .entry-content > * {
 	max-width: 800px !important;
 }
+
+.form-with-confirm-wrapper:has(.wpcf7-acceptance-as-validation.sent)
+	.form-confirmation {
+	@apply opacity-100 pointer-events-auto;
+}
+
+.form-with-confirm-wrapper {
+	@apply relative;
+}
+
+.form-basic input:not([type="checkbox"], [type="submit"]),
+.form-basic textarea {
+	@apply px-6 min-w-0 w-full h-[60px] border-b-1 border-[#EDEDED] hover:border-primary focus:border-primary outline-none transition duration-200 bg-transparent text-primary placeholder:text-white text-base;
+}
+
+.form-basic label[for="your-file"] {
+	@apply cursor-pointer px-6 min-w-0 w-full h-[60px] rounded-[5px] border border-[#EDEDED] hover:border-primary focus:border-primary outline-none transition-all duration-200 bg-white text-white text-base;
+}
+
+.form-basic input#your-file {
+	@apply !border-none !hidden;
+}
+
+.form-basic textarea {
+	@apply py-4 h-[100px] min-h-[100px] md:h-[150px] max-h-[300px];
+}
+
+.form-basic .wpcf7-list-item {
+	@apply ml-0;
+}
+
+.form-basic input[type="checkbox"] {
+	@apply appearance-none shrink-0 size-[14px] rounded-full block cursor-pointer bg-transparent border border-primary hover:bg-primary/25 checked:hover:bg-primary/75 checked:bg-primary transition duration-200;
+}
+
+.form-basic .wpcf7-acceptance label {
+	@apply flex gap-2.5 items-start text-sm cursor-pointer;
+}
