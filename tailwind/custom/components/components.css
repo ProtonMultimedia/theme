@@ -38,7 +38,11 @@ body #page #content {
 .page-content > *,
 .entry-content > * {
 	/* Content width from the `theme.json` file */
-	@apply max-w-content mx-auto font-[Rajdhani];
+	@apply max-w-content mx-auto;
+}
+
+.page-content > * {
+	@apply font-[Rajdhani];
 }
 
 .entry-content > .alignwide {
@@ -56,6 +60,13 @@ body #page #content {
 
 .entry-content > .alignright {
 	@apply float-right ml-8;
+}
+
+.post_img_full_width {
+	@apply container mx-auto !m-0 min-w-full lg:h-[500px] overflow-hidden;
+}
+.post_img_full_width img {
+	@apply w-full;
 }
 
 /* Custom */
@@ -241,7 +252,8 @@ body .ham .line {
 }
 
 .pm-taxonomy-pill {
-	@apply rounded p-[2px_6px] border-primary border border-solid inline-block cursor-pointer transition;
+	@apply rounded p-[2px_8px] text-[16px] border-primary border border-solid inline-block cursor-pointer transition;
+	text-decoration: none !important;
 }
 
 footer {
@@ -258,4 +270,9 @@ footer {
 .bg_custom_gradient {
 	background: linear-gradient(0deg, #110d25 10%, rgba(17, 13, 37, 0.6) 400%);
 	@apply size-full absolute top-0 left-0;
+}
+
+.page-content > *,
+.entry-content > * {
+	max-width: 800px !important;
 }

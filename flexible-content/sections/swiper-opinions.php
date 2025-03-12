@@ -50,7 +50,7 @@ $opinions  = $args['opinions']
     </div>
   </div>
 
-  <div class="container mx-auto pb-10 lg:pb-40 mb-2 z-20">
+  <div class="container mx-auto pb-10 lg:pb-20 mb-2 z-20">
     <div class="relative flex flex-row">
       <?php if ($opinions): ?>
         <div class="w-full mb-4 lg:mb-0 h-full z-40">

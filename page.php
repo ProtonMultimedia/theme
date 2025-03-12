@@ -16,7 +16,7 @@ get_header();
 ?>
 
 <section id="primary">
-	<main id="main">
+	<main id="main" class="font-[Rajdhani]">
 
 		<?php
 
